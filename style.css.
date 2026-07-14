@@ -167,6 +167,51 @@ text-align:center;
 
 .section h1{
 
+.contact-info{
+
+margin-bottom:30px;
+
+font-size:18px;
+
+line-height:2;
+
+color:#475569;
+
+}
+
+
+.contact-form{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+
+.contact-form input,
+.contact-form textarea{
+
+background:#f8fafc;
+
+outline:none;
+
+}
+
+
+.contact-form button{
+
+width:100%;
+
+}
 font-size:42px;
 
 margin-bottom:40px;
@@ -514,5 +559,50 @@ height:auto;
 
 }
 
+
+}
+.contact-info{
+
+margin-bottom:30px;
+
+font-size:18px;
+
+line-height:2;
+
+color:#475569;
+
+}
+
+
+.contact-form{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+max-width:600px;
+
+margin:auto;
+
+}
+
+
+.contact-form input,
+.contact-form textarea{
+
+background:#f8fafc;
+
+outline:none;
+
+}
+
+
+.contact-form button{
+
+width:100%;
 
 }
