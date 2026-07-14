@@ -2,25 +2,27 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
 }
-
 
 body{
-    background:#f4f4f4;
-    color:#333;
+    background:#f8fafc;
+    color:#1e293b;
 }
 
 
-/* Navigation */
+/* NAVBAR */
 
 header{
-    background:#111;
-    padding:20px 60px;
+    background:#0f172a;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
 }
 
 
-nav{
+.navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -29,118 +31,488 @@ nav{
 
 .logo{
     color:white;
-    font-size:28px;
+    font-size:30px;
+    font-weight:700;
 }
 
 
-nav ul{
-    list-style:none;
+.nav-links{
     display:flex;
-    gap:30px;
+    list-style:none;
+    gap:25px;
 }
 
 
-nav ul li a{
-    color:white;
+.nav-links a{
     text-decoration:none;
-    font-size:18px;
+    color:white;
+    font-size:16px;
+    transition:0.3s;
 }
 
 
-nav ul li a:hover{
-    color:#00bcd4;
+.nav-links a:hover{
+    color:#38bdf8;
 }
 
 
 
-/* Hero section */
+/* HOME HERO */
 
 .hero{
 
-    height:80vh;
+height:90vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+display:flex;
 
-    text-align:center;
+justify-content:center;
 
-    background:
-    linear-gradient(
-    rgba(0,0,0,0.5),
-    rgba(0,0,0,0.5)
-    );
+align-items:center;
+
+text-align:center;
+
+
+background:
+
+linear-gradient(
+rgba(15,23,42,0.7),
+rgba(15,23,42,0.7)
+),
+
+url("images/images (1).jpeg");
+
+
+background-size:cover;
+
+background-position:center;
 
 }
+
 
 
 .hero-content{
 
-    max-width:700px;
+max-width:800px;
 
-    color:white;
+color:white;
 
 }
 
 
 .hero h1{
 
-    font-size:55px;
+font-size:60px;
 
-    margin-bottom:20px;
+margin-bottom:20px;
 
 }
+
 
 
 .hero p{
 
-    font-size:20px;
+font-size:20px;
 
-    line-height:1.6;
+line-height:1.7;
 
-    margin-bottom:35px;
+margin-bottom:35px;
 
 }
 
 
-
-/* Button */
 
 .btn{
 
-    background:#00bcd4;
+display:inline-block;
 
-    color:white;
+background:#38bdf8;
 
-    padding:15px 35px;
+color:white;
 
-    border-radius:30px;
+padding:15px 40px;
 
-    text-decoration:none;
+border-radius:30px;
 
-    font-size:18px;
+text-decoration:none;
+
+font-weight:bold;
+
+transition:0.3s;
 
 }
+
 
 
 .btn:hover{
 
-    background:#0097a7;
+background:#0284c7;
+
+transform:translateY(-3px);
 
 }
 
 
 
-/* Footer */
+/* GENERAL SECTION */
+
+.section{
+
+padding:80px 8%;
+
+text-align:center;
+
+}
+
+
+
+.section h1{
+
+font-size:42px;
+
+margin-bottom:40px;
+
+}
+
+
+
+
+/* HOME ABOUT */
+
+.about-preview{
+
+padding:70px 8%;
+
+text-align:center;
+
+background:white;
+
+}
+
+
+.about-preview h2{
+
+font-size:35px;
+
+margin-bottom:20px;
+
+}
+
+
+
+.about-preview p{
+
+font-size:18px;
+
+color:#64748b;
+
+}
+
+
+
+/* ABOUT PAGE */
+
+.about-box{
+
+display:flex;
+
+align-items:center;
+
+gap:50px;
+
+text-align:left;
+
+}
+
+
+
+.about-box img{
+
+width:450px;
+
+height:350px;
+
+object-fit:cover;
+
+border-radius:20px;
+
+}
+
+
+
+.about-box p{
+
+font-size:18px;
+
+line-height:1.8;
+
+margin-top:20px;
+
+color:#64748b;
+
+}
+
+
+
+/* SERVICES CARDS */
+
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+
+
+.card{
+
+background:white;
+
+padding:40px 25px;
+
+border-radius:20px;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,0.08);
+
+transition:0.3s;
+
+}
+
+
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+.card h2{
+
+margin-bottom:20px;
+
+color:#0f172a;
+
+}
+
+
+
+.card p{
+
+color:#64748b;
+
+line-height:1.6;
+
+}
+
+
+
+/* GALLERY */
+
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+
+
+.photo-card{
+
+overflow:hidden;
+
+border-radius:20px;
+
+box-shadow:
+
+0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+
+.photo-card img{
+
+width:100%;
+
+height:350px;
+
+object-fit:cover;
+
+transition:0.5s;
+
+}
+
+
+
+.photo-card img:hover{
+
+transform:scale(1.1);
+
+}
+
+
+
+/* CONTACT FORM */
+
+
+.contact-form{
+
+max-width:600px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+width:100%;
+
+padding:16px;
+
+border-radius:10px;
+
+border:1px solid #cbd5e1;
+
+font-size:16px;
+
+}
+
+
+
+.contact-form textarea{
+
+height:160px;
+
+resize:none;
+
+}
+
+
+
+.contact-form button{
+
+background:#0f172a;
+
+color:white;
+
+padding:16px;
+
+border:none;
+
+border-radius:30px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+
+
+.contact-form button:hover{
+
+background:#38bdf8;
+
+}
+
+
+
+/* FOOTER */
+
 
 footer{
 
-    background:#111;
+background:#0f172a;
 
-    color:white;
+color:white;
 
-    text-align:center;
+padding:25px;
 
-    padding:20px;
+text-align:center;
+
+}
+
+
+
+/* MOBILE RESPONSIVE */
+
+
+@media(max-width:768px){
+
+
+.navbar{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+
+
+.nav-links{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+
+
+.about-box{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+
+
+.about-box img{
+
+width:100%;
+
+height:auto;
+
+}
+
 
 }
